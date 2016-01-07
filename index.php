@@ -1,11 +1,16 @@
 <?php
-    //echo  'Hello World';
-$message = 'こんばんは';
 
-//echo  $message;
+    $age = 20;
 
-echo $message;
-echo $message;
-echo $message;
-echo $message;
-echo $message;
+    if($age > 20)
+    {
+        echo '成人ですね';
+    }
+    else if($age < 20)
+    {
+        echo '未成年ですね';
+    }
+    else if($age = 20)
+    {
+        echo '今年は成人式ですね';
+    }
