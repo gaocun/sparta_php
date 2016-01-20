@@ -1,18 +1,22 @@
 <?php
 
-$familyName = '高村';
 
-$firstName = '一郎';
+// var_dump($_POST);
+$name = $_POST['name'];
+$impression = $_POST['impression'];
 
-$age = '40';
+?>
 
-$five = 5;
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>フォームの練習</title>
+</head>
+<body>
+  <p>投稿された内容はこちら</p>
+  <p>名前: <?php echo htmlspecialchars($name, ENT_QUOTES, "UTF-8"); ?></p>
+  <p>名前: <?php echo htmlspecialchars($impression, ENT_QUOTES, "UTF-8"); ?></p>
 
-$FIVE = '5';
-
-echo $familyName . $firstName . 'の年齢は' . $age . '歳です';
-
-echo '<br>';
-
-var_dump($five);
-var_dump($FIVE);
+</body>
+</html>
