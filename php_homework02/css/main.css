@@ -1,0 +1,36 @@
+
+.mt30{
+    margin-top: 30px;
+}
+
+.wrap{
+    width: 390px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 20px;
+}
+
+table tr th, table tr td{
+    padding-top: 20px;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+form .input_form tr th:before{
+    content:"＊";
+    color: red;
+}
+
+.tac{
+    text-align: center;
+}
+
+.tac input{
+    margin: 5px;
+}
+
+.errormsg_color{
+    color: red;
+}

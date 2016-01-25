@@ -1,15 +1,38 @@
+<?php
+    if($_SERVER['REQUEST_METHOD'] === 'POST')
+    {
+        $title = $_POST['title'];
+        $impression = $_POST['impression'];
+        $name = $_POST['name'];
+    }
+
+
+?>
+
+
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>フォームの練習</title>
+    <meta charset="UTF-8">
+    <title>映画の感想</title>
 </head>
 <body>
-  <p>名前と感想を入力してね！</p>
-  <form action="practice01.php" method="post">
-    名前: <input type="text" name="name"><br>
-    感想: <input type="text" name="impression">
-    <input type="submit" value="感想を投稿">
-  </form>
+    <h1>映画の感想</h1>
+        <form action="" method="post">
+            タイトル: <input type="text" name="title">
+            感想: <input type="text" name="impression">
+            名前: <input type="text" name="name">
+            <input type="submit" value="感想を投稿">
+        </form>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
